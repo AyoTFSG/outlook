@@ -13,3 +13,30 @@
     background-color: lightgreen;
     font-weight: bold;
 }
+div {
+    background-color: rebeccapurple;
+}
+body {
+    margin: 10px;
+}
+.card {
+    padding: 8px;
+    text-align: center;
+}
+.card .picture {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 180px;
+}
+.ingredient {
+    margin-top: 10px;
+    text-align:justify;
+    padding: 8px;
+}
+.step {
+    
+    padding: 10px;
+    margin-top: 10px;
+    color: aquamarine;
+}

@@ -5,3 +5,9 @@ div {
     font-weight: bolder;
     text-align: center;
 }
+.container .text {
+    text-align: center;
+    background-color: yellow;
+    font-size: 18px;
+    color: red;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function add() {
+            console.log("Hello world");
+        }
+
+        add();
+
+        function greet(name) {
+            console.log("Hello " + name);
+        }
+
+        greet("John");
+
+        function add (a,b) {
+            return a + b;
+        }
+
+        console.log(add(2,4));
+
+        const exam = (a, b) => a + b;
+        console.log(exam(4, 1));
+        
+        setTimeout(() => {
+            console.log("Hello world")
+        }, 5000);
+
+        function square(a) {
+            return a * a;
+        }
+
+        console.log(square(3));
+
+        function num(a) {
+
+         if(a % 2 === 0) {
+          console.log(a + " Even")
+        } else {
+          console.log("odd")
+        }
+        }
+        num(5);
+
+        function add(a) {
+            return a % 2 === 0 ? "Even" : "Odd";
+        }
+
+        console.log(add(4));
+    </script>
+</body>
+</html>

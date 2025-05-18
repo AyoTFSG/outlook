@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript_Assignment</title>
+</head>
+<body>
+    <script>
+    //Section A//
+    // 1a. push(): //
+    // Adds one or more elements to the end of an array. //
+
+    let fruits = ["apple", "banana"];
+    fruits.push("grape");
+
+        console.log(fruits);
+    
+    // 1b. pop(): //
+    // Removes the last element from an array and returns it. //
+
+    let new_fruits = ["apple", "banana", "grape"];
+    new_fruits.pop();
+    
+        console.log(new_fruits);
+
+    // 2. filter method to extract even numbers //
+    
+    let numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+    let evenNumbers = numbers.filter(num => num % 2 === 0);
+
+        console.log(evenNumbers);
+
+
+
+    // 3. The .find() method returns the first element in an array that satisfies a given condition. //
+    // If no element matches, it returns undefined. //
+
+
+    let num = [4, 6, 3, 2, 9, 1];
+    let result = num.find(num => num < 4);
+
+        console.log(result);  
+
+    // Section B //
+    // 1. Difference Between if, else if, and else //
+    // if: checks the first condition. 
+    // else if: checks another condition if the first is false. 
+    // else: runs when none of the if or else if conditions are true. //
+
+    // for example //
+    let score = 75;
+
+    if (score >= 90) {
+        console.log("Excellent");
+    } else if (score >= 60) {
+        console.log("Good");
+    } else {
+        console.log("Needs improvement");
+    }
+
+
+    //2.JavaScript program that checks if a number is positive, negative, or zero.//
+    let count = -3;
+
+    if (count > 0) {
+        console.log("Positive");
+    }else if (count < 0) {
+        console.log("Negative");
+    }else {
+        console.log ("Zero");
+    }
+
+    //3. A switch statement is used to perform different actions based on multiple possible values of a variable. //
+
+    // Example: Meals of the Day
+
+    let Meal = "Lunch";
+
+    switch (Meal) {
+    case "Breakfast":
+        console.log("First meal of the day");
+        break;
+    case "Lunch":
+        console.log("Second Meal of the day");
+        break;
+    case "Dinner":
+        console.log("Last Meal of the day");
+        break;
+    default:
+        console.log("It's either an appetizer or after-meal");
+    }
+
+
+    // 4. Comparison Operators in JavaScript:
+    // The == operator checks if two values are equal after converting them to the same type. For example, 5 == "5" returns true because JavaScript converts the string "5" to the number 5 before comparing.
+
+    // The === operator checks for strict equality, meaning both the value and the type must be the same. So, 5 === "5" returns false because one is a number and the other is a string.
+
+    // The != operator checks if two values are not equal, allowing type conversion. For instance, 5 != "6" returns true because 5 is not equal to 6.
+
+    // The !== operator checks for strict inequality, meaning the values or their types must be different. For example, 5 !== "5" returns true because the types are not the same.
+
+    // The > operator checks if the value on the left is greater than the value on the right. For example, 7 > 3 returns true.
+
+    // The < operator checks if the value on the left is less than the one on the right. So, 2 < 5 returns true.
+
+    // 5. Writing a program that determines, 
+    // if a student passed or failed based on a score using an if-else condition.//
+
+    let grade = 82;
+        if (grade >= 70) {
+          console.log ("Passed");
+        } else {
+          console.log ("Failed");
+        }
+
+    
+    // Section C //
+    // 1. A function is a Javascript property that performs a specific task. You can "call" a function whenever you need it, which helps keep your code organized and efficient.
+    // A function is defined as shown below:
+
+        function sayHello() {
+            console.log("Hello!");
+        }
+
+        sayHello();
+
+
+    // 2. A function named `greetUser` that takes a name as a parameter and logs a greeting message.
+
+        function greetUser(name) {
+            console.log("Hello, " + name + "! The FullStack guy");
+        }
+
+        greetUser("Ayooluwa");
+    
+    // 3. 
+
+        function multiply (a,b) {
+            return a * b;
+        }
+
+        console.log(multiply(2,4));
+
+    </script>
+</body>
+</html>
